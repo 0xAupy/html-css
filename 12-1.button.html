@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>button</title>
+  </head>
+  <body>
+    <a href="12-2.redirect.html" target="_blank">
+      <button
+        onclick="js()"
+        style="
+          font-size: large;
+          background-color: gray;
+          color: lightblue;
+          border-radius: 8px;
+          padding: 10px 10px;
+        "
+      >
+        click me
+      </button>
+      <p id="text">hello</p>
+
+      <script>
+        const js = () => {
+          document.getElementById("text").innerHTML = "goodbye";
+        };
+      </script>
+    </a>
+  </body>
+</html>
